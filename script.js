@@ -1,7 +1,13 @@
 function decimalToBinary(num) {
   //Write you code here
-	console.log(num.toString(2));
-  
+	let binaryNum=new Array(32);
+	let i=0;
+	while(n>0){
+		binaryNum[i]=n%2;
+		n=Math.floor(n/2);
+		i++;
+	}
+	
 }
 
 window.decimalToBinary = decimalToBinary;
