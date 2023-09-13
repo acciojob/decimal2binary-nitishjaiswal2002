@@ -4,7 +4,7 @@ function decimalToBinary(num) {
 	let i=0;
 	while(num>0){
 		binaryNum[i]=num%2;
-		n=Math.floor(n/2);
+		num=Math.floor(num/2);
 		i++;
 	}
 	
