@@ -1,12 +1,15 @@
 function decimalToBinary(num) {
   //Write you code here
-	let binaryNum=new Array(32);
-	let i=0;
-	while(num>0){
-		binaryNum[i]=num%2;
-		num=Math.floor(num/2);
-		i++;
+	var b_number =0;
+	var cnt=0;
+	while(num!=0){
+		var rem=num%2;
+		var c =Math.pow(10, cnt);
+		b_number +=rem*c;
+		n=parseInt(num/2);
+		cnt++;
 	}
+	return b_number;
 	
 }
 
